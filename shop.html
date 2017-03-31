@@ -2,13 +2,16 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Barbershop</title>
+    <title>Shop</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header class="header-main">
-        <div class="container">
-            <a class="logo" href="index.html"><img src="#" alt="Barbershop"></a>
+        <div class="container clearfix">
+            <a class="shop-logo" href="#">
+                <img src="#" alt="" width="110" height="20">
+            </a>
             <nav class="navigation-main">
                 <ul>
                     <li><a href="#">Информация</a></li>
@@ -18,17 +21,19 @@
                     <li><a href="#">Контакты</a></li>
                 </ul>
             </nav>
-            <div class="user-blog"><a href="#">Вход</a></div>
+            <div class="user-blog">
+                <a href="#">Вход</a>
+            </div>
         </div>
     </header>
     <main class="container">
-        <h1>Средства для ухода</h1>
+        <h1 class="title">Средства для ухода</h1>
         <ul class="breadcrumps">
             <li><a href="#">Главная</a></li>
             <li><a href="#">Магазин</a></li>
             <li><span>Средства для ухода</span></li>
         </ul>
-        <section class="shop">
+        <section class="shop-content">
             <div class="sidebar">
                 <form action="#" method="post" name="sidebar">
                     <fieldset>
@@ -47,16 +52,16 @@
                                 <label for="checkbox-3">Suavecito</label>
                             </li>
                             <li>
-                                <input id="checkbox-3" type="checkbox" name="Malin">
-                                <label for="checkbox-3">Malin+Goetz</label>
+                                <input id="checkbox-4" type="checkbox" name="Malin">
+                                <label for="checkbox-4">Malin+Goetz</label>
                             </li>
                             <li>
-                                <input id="checkbox-4" type="checkbox" name="Murray’s">
-                                <label for="checkbox-4">Murray’s</label>
+                                <input id="checkbox-5" type="checkbox" name="Murray’s">
+                                <label for="checkbox-5">Murray’s</label>
                             </li>
                             <li>
-                                <input id="checkbox-5" type="checkbox" name="American">
-                                <label for="checkbox-5">American Crew</label>
+                                <input id="checkbox-6" type="checkbox" name="American">
+                                <label for="checkbox-6">American Crew</label>
                             </li>
                         </ul>
                     </fieldset>
@@ -161,7 +166,7 @@
                         <a class="btn" href="#">Купить</a>
                     </div>
                 </article>
-                <div>
+                <div class="breadcrumbs">
                     <a href="#">1</a>
                     <a href="#">2</a>
                     <a href="#">3</a>

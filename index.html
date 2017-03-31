@@ -4,11 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Barbershop</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header class="header-main">
-        <div class="container">
+        <div class="container clearfix">
             <nav class="navigation-main">
                 <ul>
                     <li>Информация</li>
@@ -18,12 +19,14 @@
                     <li>Контакты</li>
                 </ul>
             </nav>
-            <div class="user-blog"> <a class="login" href="#">Вход</a> </div>
+            <div class="user-blog">
+                <a class="login" href="#">Вход</a>
+            </div>
         </div>
-    </header>              
+    </header>
     <main class="container">
-        <div class="logo"></div>
-        <section class="feature">
+        <div class="index-logo"></div>
+        <section class="feature clearfix">
             <div class="feature-item"> <b>Быстро</b>
                 <p>Мы делаем свою работу быстро! Два часа пролетят незаметно и вы — счастливый обладетель стильной стрижки-минутки!</p>
             </div>
@@ -34,8 +37,8 @@
                 <p>Наши мастера — профессионалы своего дела и не могут стоить дешево. К тому же, разве цена не дает определеный статус?</p>
             </div>
         </section>
-        <section class="content">
-            <div class="content-left">
+        <section class="index-content clearfix">
+            <div class="index-content-left">
                 <h2>Новости</h2>
                 <ul class="news">
                     <li>
@@ -47,7 +50,7 @@
                         <time datetime="2016-09-19">19 сентября</time>
                     </li>
                 </ul> <a class="btn" href="#">Все новости</a> </div>
-            <div class="content-right">
+            <div class="index-content-right">
                 <h2>Фотогалерея</h2>
                 <div class="gallery">
                     <figure> <img src="#" alt="Barbershop Borodinski" width="286" height="164"> </figure>
@@ -56,23 +59,19 @@
                 </div>
             </div>
         </section>
-        <section class="content">
-            <div class="content-left">
+        <section class="index-content clearfix">
+            <div class="index-content-left">
                 <h2>Контактная информация</h2>
-                <p> 
-                    Барбершоп «бородинский» <br> 
-                    Адрес: г. Санкт-петербург,&nbsp;б. Конюшенная, д. 19/8 <br> 
-                    Телефон: +7 (495) 666-02-66
+                <p>
+                    Барбершоп «бородинский» <br> Адрес: г. Санкт-петербург,&nbsp;б. Конюшенная, д. 19/8 <br> Телефон: +7 (495) 666-02-66
                 </p>
-                <p> 
-                    Время работы: <br> 
-                    Пн —&nbsp;пт: с 10:00&nbsp;до 22:00 <br> 
-                    Сб —&nbsp;вс: с 10:00&nbsp;до 19:00
+                <p>
+                    Время работы: <br> Пн —&nbsp;пт: с 10:00&nbsp;до 22:00 <br> Сб —&nbsp;вс: с 10:00&nbsp;до 19:00
                 </p>
                 <a class="btn" href="#">Как проехать</a>
                 <a class="btn" href="#">Обратная связь</a>
             </div>
-            <div class="content-right">
+            <div class="index-content-right">
                 <h2>Записатся</h2>
                 <p>Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
                 <form action="#" method="post">
@@ -83,13 +82,13 @@
                 </form>
             </div>
         </section>
-        <footer class="footer-main">
+    </main>
+    <footer class="footer-main">
+        <div class="container clearfix">
             <div class="footer-contact">
                 <p>
-                    Барбершоп «бородинский» <br> 
-                    Адрес: г. Санкт-петербург, ул. Б.&nbsp;Конюшенная, д.&nbsp;19/8 <br>
-                    <a href="#">Как нас найти?</a> <br> 
-                    Телефон: +7 (495)&nbsp;666-02-66
+                    Барбершоп «бородинский» <br> Адрес: г. Санкт-петербург, ул. Б.&nbsp;Конюшенная, д.&nbsp;19/8 <br>
+                    <a href="#">Как нас найти?</a> <br> Телефон: +7 (495)&nbsp;666-02-66
                 </p>
             </div>
             <div class="footer-social">
@@ -102,8 +101,8 @@
                 <p>Разработано:</p>
                 <a class="btn" href="https://htmlacademy.ru/">Htmlacademy.ru</a>
             </div>
-        </footer>
-    </main>
+        </div>
+    </footer>
 </body>
 
 </html>
