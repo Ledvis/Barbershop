@@ -1,0 +1,165 @@
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.header-main {
+    margin-bottom: 55px;
+}
+
+.container {
+    width: 960px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.navigation-main {
+    float: left;
+    width: 540px;
+    padding: 0 16px;
+    box-sizing: border-box;
+}
+
+.user-blog {
+    float: right;
+    width: 80px;
+    padding: 0 16px;
+    box-sizing: border-box;
+}
+
+.logo-big {
+    width: 204px;
+    height: 204px;
+    margin: 0 auto;
+    margin-bottom: 26px;
+}
+
+.feature {
+    margin-bottom: 75px;
+}
+
+.feature-item {
+    float: left;
+    width: 300px;
+    margin-right: 30px;
+}
+
+.feature-item:last-child {
+    margin-right: 0;
+}
+
+.index-content {
+    margin-bottom: 35px;
+    padding: 60px 80px;
+}
+
+.index-content-left {
+    float: left;
+    width: 320px;
+}
+
+.index-content-right {
+    float: right;
+    width: 300px;
+}
+
+.footer-main {
+    margin-top: 60px;
+}
+
+.footer-contact {
+    float: left;
+    width: 310px;
+    margin-right: 90px;
+}
+
+.footer-social {
+    float: left;
+    width: 140px;
+}
+
+.footer-copyright {
+    float: right;
+    width: 140px;
+}
+
+.header-secondary {
+    margin-bottom: 55px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.logo-small {
+    float: left;
+}
+
+.title {
+    margin-bottom: 25px;
+}
+
+.breadcrumbs {
+    margin-bottom: 50px;
+}
+
+.shop-content {}
+
+.shop-content-form {
+    float: left;
+    width: 220px;
+}
+
+.shop-content-catalog {
+    float: right;
+    width: 700px;
+}
+
+.footer-secondary {
+    margin-top: 47px;
+    padding-top: 60px;
+    padding-bottom: 35px;
+}
+
+.item-content-gallary {
+    float: left;
+    width: 460px;
+}
+
+.item-content-descr {
+    float: right;
+    width: 390px;
+}
+
+.breadcumbs {
+    margin-bottom: 50px;
+}
+
+b {
+    margin-bottom: 70px;
+}
+
+.price-content:first-of-ty {
+    margin-bottom: 55px;
+}
+
+.price-content-left {
+    float: left;
+    width: 240px;
+}
+
+.price-content-right {
+    float: right;
+    width: 460px;
+}
+
+.price-content p {
+    float: left;
+    width: 380px;
+}
+.price-content p:first-of-type {
+    margin-right: 100px;
+}
+
+.price-content h2 {
+    margin-bottom: 36px;
+}
