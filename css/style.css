@@ -91,7 +91,8 @@ body {
     left: 20px;
     width: 18px;
     height: 16px;
-    background-image: url("../img/icon-login.png");
+    background-image: url("../img/sprite.png");
+    background-position: -20px -155px;
     opacity: 0.3;
 }
 
@@ -151,41 +152,234 @@ body {
 
 .index-content {
     margin-bottom: 35px;
-    padding: 60px 80px;
+    padding: 50px 80px;
     color: #000000;
-    background: #f8f5f2 url("../img/index-content-bg.jpg");
+    background: url("../img/horizontal-line.png") no-repeat center, #f8f5f2 url("../img/index-content-bg.jpg");
 }
 
-.index-content-left {
+.index-news,
+.index-contact {
     float: left;
     width: 320px;
 }
 
-.index-content-right {
+.index-gallery,
+.index-form {
     float: right;
     width: 300px;
 }
 
+.index-gallery div {
+    position: relative;
+    height: 260px;
+}
+
+.index-gallery figure {
+    height: 178px;
+    margin: 0;
+    margin-bottom: 37px;
+    border: 7px solid white;
+    box-sizing: border-box;
+}
+
+.index-gallery img {
+    width: 286px;
+    height: 164px;
+    background: #242424;
+}
+
+.index-gallery .btn {
+    position: absolute;
+    bottom: 0;
+    width: 140px;
+}
+
+.index-gallery .prev {
+    left: 0;
+}
+
+.index-gallery .next {
+    right: 0;
+}
+
+.index-content h2 {
+    margin: 0;
+    margin-bottom: 30px;
+    padding: 0;
+    font-size: 30px;
+    white-space: nowrap;
+}
+
+.index-news ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.btn {
+    display: inline-block;
+    margin-right: 16px;
+    padding: 10px 32px;
+    font-size: inherit;
+    line-height: inherit;
+    font-weight: inherit;
+    vertical-align: middle;
+    text-align: center;
+    color: #ffffff;
+    font-family: inherit;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: #000000;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.btn:last-of-type {
+    margin-right: 0;
+}
+
+.btn:hover,
+.btn:active {
+    background-color: #663d15;
+}
+
+.btn:disabled {
+    opacity: 0.5;
+    cursor: default;
+}
+
+.btn:hover:disabled {
+    background-color: #000000;
+}
+
+.index-news li {
+    margin-bottom: 20px;
+}
+
+.index-news p {
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 0;
+    padding-right: 10px;
+    line-height: 24px;
+}
+
+.index-news time[datetime] {
+    font-weight: 400;
+    text-transform: none;
+}
+
+.index-form input {
+    width: 140px;
+    margin-bottom: 20px;
+    padding: 7px 15px;
+    box-sizing: border-box;
+    font-size: inherit;
+    line-height: inherit;
+    font-weight: inherit;
+    color: #000000;
+    font-family: inherit;
+    text-transform: inherit;
+    border: 2px solid #000000;
+    outline: none;
+}
+
+.index-form input:nth-child(2n+1) {
+    margin-right: 16px;
+}
+
+.index-form input:hover {
+    border: 2px solid #663d15;
+}
+
+.index-form .btn {
+    width: 100%;
+}
+
 .footer-main {
     margin-top: 60px;
+    padding: 55px 0;
+    background: #222222 url("../img/footer-index-bg.jpg");
 }
 
 .footer-contact {
     float: left;
     width: 310px;
-    margin-right: 90px;
+    margin-right: 85px;
+}
+
+.footer-contact a {
+    color: #ffffff;
 }
 
 .footer-social {
     float: left;
     width: 140px;
+    text-align: center;
+}
+.footer-social p {
+    margin: 0;
+    margin-bottom: 15px;
+}
+.footer-social .btn-social {
+    display: inline-block;
+    width: 43px;
+    height: 43px;
+    font-size: 0;
+    text-decoration: none;
+    vertical-align: top;
+    background: #000000 url("../img/sprite.png") no-repeat center;
+    -webkit-transition: all 0.3s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.footer-social .vk {
+    background-position: -11px -22px;
+}
+
+.footer-social .vk:hover {
+    background-color: #ffffff;
+    background-position: -11px 14px;
+}
+
+.footer-social .fb {
+    background-position: -5px -222px;
+}
+
+.footer-social .fb:hover {
+    background-color: #ffffff;
+    background-position: -5px -180px;
+}
+
+.footer-social .inst {
+    background-position: -8px -103px;
+}
+
+.footer-social .inst:hover {
+    background-color: #ffffff;
+    background-position: -8px -62px;
+}
+
+.footer-social .btn-social:not(:last-child) {
+    margin-right: 2px;
 }
 
 .footer-copyright {
     float: right;
-    width: 140px;
+    text-align: center;
 }
-
+.footer-copyright p {
+    margin: 0;
+    margin-bottom: 15px;
+    padding: 0;
+}
+.footer-copyright .btn {
+    width: 140px;
+    padding: 10px 10px;
+    box-sizing: border-box;
+}
 .header-secondary {
     margin-bottom: 55px;
     padding-top: 20px;
