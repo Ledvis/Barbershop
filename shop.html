@@ -3,14 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Shop</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="content-bg">
     <header class="header-secondary">
         <div class="container clearfix">
             <a class="logo-small" href="index.html">
-                <img src="#" alt="" width="110" height="20">
+                <img src="img/logo-small.png" alt="" width="111" height="24">
             </a>
             <nav class="navigation-main">
                 <ul>
@@ -22,27 +24,27 @@
                 </ul>
             </nav>
             <div class="user-blog">
-                <a href="#">Вход</a>
+                <a class="login" href="#">Вход</a>
             </div>
         </div>
     </header>
-    <main class="container">
+    <main class="container color-secondary">
         <h1 class="title">Средства для ухода</h1>
         <ul class="breadcrumbs">
             <li><a href="index.html">Главная</a></li>
-            <li><span>Магазин</span></li>
-            <li><span>Средства для ухода</span></li>
+            <li><a href="shop.html">Магазин</a></li>
+            <li><span class="actived">Средства для ухода</span></li>
         </ul>
         <section class="shop-content clearfix">
             <div class="shop-content-form">
                 <form action="#" method="post" name="sidebar">
                     <fieldset>
                         <legend>Производители:</legend>
-                        <ul>
+                        <ul class="shop-producers">
                             <li>
-                                <input id="checkbox-1" type="checkbox" name="Baxter">
+                                <input id="checkbox-1" type="checkbox" name="Baxter" checked>
                                 <label for="checkbox-1">Baxter of California</label>
-                            </li>    
+                            </li>
                             <li>
                                 <input id="checkbox-2" type="checkbox" name="Natty">
                                 <label for="checkbox-2">Mr Natty</label>
@@ -59,17 +61,17 @@
                                 <input id="checkbox-5" type="checkbox" name="Murray’s">
                                 <label for="checkbox-5">Murray’s</label>
                             </li>
-                            <li>
-                                <input id="checkbox-6" type="checkbox" name="American">
-                                <label for="checkbox-6">American Crew</label>
+                            <li class="disabled">
+                                <input id="checkbox-6" class="disabled" type="checkbox" name="American">
+                                <label for="checkbox-6">American Crew s</label>
                             </li>
                         </ul>
                     </fieldset>
                     <fieldset>
                         <legend>Группы товаров:</legend>
-                        <ul>
+                        <ul class="shop-groups">
                             <li>
-                                <input id="radio-1" type="radio" name="radio" value="Бритвенные принадлежности">
+                                <input id="radio-1" type="radio" name="radio" value="Бритвенные принадлежности" checked>
                                 <label for="radio-1">Бритвенные принадлежности</label>
                             </li>
                             <li>
@@ -77,7 +79,7 @@
                                 <label for="radio-2">Средства для ухода</label>
                             </li>
                             <li>
-                                <input id="radio-3" type="radio" name="radio" value="Аксессуары">
+                                <input id="radio-3" class="disabled" type="radio" name="radio" value="Аксессуары">
                                 <label for="radio-3">Аксессуары</label>
                             </li>
                         </ul>
@@ -88,7 +90,7 @@
             <div class="shop-content-catalog">
                 <article class="catalog-item">
                     <figure>
-                        <img src="#" alt="">
+                        <img src="img/catalog-item1.jpg" alt="" width="220" height="165">
                     </figure>
                     <a href="#">
                         <span class="category">Набор для путешествий</span>
@@ -175,7 +177,7 @@
             </div>
         </section>
     </main>
-    <footer class="footer-secondary">
+    <footer class="footer-main">
         <div class="container clearfix">
             <div class="footer-contact">
                 <p>
@@ -185,9 +187,9 @@
             </div>
             <div class="footer-social">
                 <p>Давайте дружить!</p>
-                <a class="btn vk" href="#"></a>
-                <a class="btn fb" href="#"></a>
-                <a class="btn inst" href="#"></a>
+                <a class="btn-social vk" href="#">Вконтакте</a>
+                <a class="btn-social fb" href="#">Фейсбук</a>
+                <a class="btn-social inst" href="#">Инстаграм</a>
             </div>
             <div class="footer-copyright">
                 <p>Разработано:</p>
