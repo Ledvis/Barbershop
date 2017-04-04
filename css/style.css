@@ -42,6 +42,7 @@ body {
 }
 
 .navigation-main li {
+    position: relative;
     display: inline-block;
     vertical-align: top;
     font-size: 16px;
@@ -60,7 +61,16 @@ body {
     color: #ffffff;
     text-decoration: none;
 }
-
+.navigation-main li.active::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 56px;
+    height: 4px;
+    margin-left: -28px;
+    background: #ffffff;
+}
 .navigation-main a:hover {
     background: #242424;
 }
@@ -387,8 +397,14 @@ body {
     width: 140px;
     padding: 10px 10px;
     box-sizing: border-box;
-}
 
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.footer-copyright .btn:hover {
+    background: #ffffff;
+    color: #000000;
+}
 .header-secondary {
     margin-bottom: 52px;
     background-color: #000000;
@@ -599,6 +615,7 @@ body {
     font-size: 14px;
     vertical-align: top;
     background-color: #ffffff;
+    box-shadow: 0 0 15px rgba(0, 1, 1, 0.2);
 }
 .catalog-item:not(:nth-child(3n)) {
     margin-right: 20px;
@@ -607,12 +624,75 @@ body {
     margin-bottom: 20px;
 }
 .catalog-item figure {
+    height: 165px;
     margin: 0;
+    margin-bottom: 15px;
+}
+.catalog-item img {
+    width: 220px;
+    height: 165px;
+}
+.catalog-item a {
+    display: inline-block;
+    margin-bottom: 15px;
+    padding: 0 15px;
+    color: #000000;
+    text-decoration: none;
+    line-height: 18px;
+}
+.catalog-item a > span:first-child {
+    text-transform: none;
+}
+.catalog-buy {
+    margin-bottom: 15px;;
+    padding: 0 16px;
+    font-size: 0;
+}
+.catalog-buy span,
+.catalog-buy a {
+    display: inline-block;
+    width: 110px;
+    margin: 0;
+    padding: 12px 0;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    vertical-align: top;
+    background: #e5e5e5;
+}
+.catalog-buy a {
+    width: 78px;
+    color: #ffffff;
+    background: #000000;
+}
+.catalog-buy a:hover {
+    background: #663d15;
 }
 .paginator {
-    font-size: 14px;
+    margin-top: 45px;
+    font-size: 0;
+    line-height: 14px;
 }
-
+.paginator a,
+.paginator .active {
+    display: inline-block;
+    width: 43px;
+    height: 43px;
+    margin-right: 7px;
+    padding: 15px 0;
+    box-sizing: border-box;
+    font-size: 14px;
+    color: #ffffff;
+    text-decoration: none;
+    vertical-align: top;
+    text-align: center;
+    background: #000000;
+}
+.paginator .active {
+    color: #000000;
+    background: #ffffff;
+    cursor: default;
+}
 .item-content-gallary {
     float: left;
     width: 460px;
