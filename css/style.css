@@ -641,7 +641,7 @@ span.breadcrumbs-active {
     height: 165px;
 }
 
-.catalog-item a {
+.catalog-item > a {
     display: inline-block;
     margin: 15px;
     margin-top: 0;
@@ -679,6 +679,7 @@ span.breadcrumbs-active {
 .catalog-buy a {
     width: 78px;
     color: #ffffff;
+    text-decoration: none;
     background: #000000;
     cursor: pointer;
 }
