@@ -19,6 +19,7 @@
                     <li><a href="price.html">Прайс-лист</a></li>
                     <li><a href="shop.html">Магазин</a></li>
                     <li><a href="#">Контакты</a></li>
+
                 </ul>
             </nav>
             <div class="user-blog">
@@ -55,15 +56,15 @@
                     </li>
                 </ul>
                 <a class="btn" href="#">Все новости</a>
-                </div>
+            </div>
             <div class="index-gallery">
                 <h2>Фотогалерея</h2>
                 <div>
                     <figure>
                         <img src="img/gallery.jpg" alt="Barbershop Borodinski" width="286" height="164">
                     </figure>
-                    <button class="btn prev" disabled>Назад</button>
-                    <button class="btn next">Вперед</button>
+                    <button class="btn prev" type="button" disabled>Назад</button>
+                    <button class="btn next" type="button">Вперед</button>
                 </div>
             </div>
         </section>
@@ -112,6 +113,26 @@
             </div>
         </div>
     </footer>
+    <div class="modal-content">
+        <button class="modal-content-close" type="button">Закрыть</button>
+        <h2>Личный кабинет</h2>
+        <p>Введите пожалуйста свой логин и пароль</p>
+        <form class="form-login" action="#" method="post">
+            <input class="icon-user" type="text" name="login" placeholder="Логин">
+            <input class="icon-password" type="password" name="password" placeholder="Пароль">
+            <label class="login-checkbox" for="remember">
+                <input id="remember" type="checkbox" name="remember">
+                <span class="checkbox-indicator"></span>
+                Запомните меня
+            </label>
+            <a class="restore" href="#">Я забыл пароль</a>
+            <button class="btn" type="submit">Войти</button>
+        </form>
+    </div>
+    <div class="modal-content-map">
+        <button class="modal-content-close" type="button">Закрыть</button>
+    </div>
+    <div class="modal-content-overlay"></div>
 </body>
 
 </html>
