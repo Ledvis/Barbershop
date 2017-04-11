@@ -1074,8 +1074,14 @@ img {
     background: #f8f5f2 url("../img/index-content-bg.jpg");
     box-shadow: 0 30px 50px rgba(0, 1, 1, 0.75);
 }
+
 .modal-content-show {
     display: block;
+    -webkit-transition: bounce 0.6s;
+    animation: bounce 0.6s;
+}
+.modal-content-error {
+    animation: shake 0.6s;
 }
 .modal-content-close {
     position: absolute;
@@ -1236,4 +1242,49 @@ img {
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
     z-index: 1;
+}
+
+
+/*Анимации*/
+
+@-webkit-keyframes bounce {
+    0% {
+        -webkit-transform: translateY(-2000px);
+        transform: translateY(-2000px);
+    }
+    70% {
+        -webkit-transform: translateY(30px);
+        transform: translateY(30px);
+    }
+    90% {
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+@-webkit-keyframes shake {
+    0%,
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+    20%,
+    40%,
+    60%,
+    80% {
+        -webkit-transform: translateY(10px);
+        transform: translateY(10px);
+    }
 }
