@@ -33,11 +33,32 @@ form.addEventListener("submit", function (event) {
 });
 
 window.addEventListener("keydown", function (event) {
-
     if (event.keyCode === 27) {
         if (popup.classList.contains("modal-content-show")) {
             popup.classList.remove("modal-content-show");
             popup.classList.remove("modal-content-error");
+        }
+    }
+});
+
+var linkMap = document.querySelector(".js-map");
+var popupMap = document.querySelector(".modal-content-map");
+var closeMap = popupMap.querySelector(".modal-content-close");
+
+linkMap.addEventListener("click", function (event) {
+    event.preventDefault();
+    popupMap.classList.add("modal-map-show");
+});
+
+closeMap.addEventListener("click", function (event) {
+    event.preventDefault();
+    popupMap.classList.remove("modal-map-show");
+});
+
+window.addEventListener("keydown", function (event) {
+    if (event.keyCode === 27 ) {
+        if (popupMap.classList.contains("modal-map-show")) {
+            popupMap.classList.remove("modal-map-show");
         }
     }
 });
