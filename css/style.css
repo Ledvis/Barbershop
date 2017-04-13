@@ -837,6 +837,10 @@ img {
     cursor: default;
 }
 
+.item-content {
+    margin-top: 50px;
+}
+
 .item-content-gallary {
     float: left;
     width: 460px;
@@ -1237,7 +1241,6 @@ img {
 
 .modal-map-show {
     display: block;
-    animation: opacity 1s;
 }
 
 .modal-content-overlay {
@@ -1293,14 +1296,5 @@ img {
     80% {
         -webkit-transform: translateY(10px);
         transform: translateY(10px);
-    }
-}
-
-@-webkit-keyframes opacity {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
     }
 }
