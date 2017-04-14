@@ -716,10 +716,10 @@ img {
 .shop-groups input:checked+.indicator-status::before {
     content: "";
     position: absolute;
-    top: 2.5px;
-    left: 2.5px;
-    width: 13px;
-    height: 13px;
+    top: 2px;
+    left: 2px;
+    width: 14px;
+    height: 14px;
     background: #000000;
     border-radius: 50%;
 }
