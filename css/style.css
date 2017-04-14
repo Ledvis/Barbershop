@@ -662,8 +662,8 @@ img {
     border: 2px solid #000000;
 }
 
-.shop-producers input:checked+.indicator-status::before,
-.shop-producers input:checked+.indicator-status::after {
+.shop-producers input[type="checkbox"]:checked+.indicator-status::before,
+.shop-producers input[type="checkbox"]:checked+.indicator-status::after {
     content: "";
     position: absolute;
     top: 8px;
@@ -692,9 +692,9 @@ img {
     border-color: #b1afad;
 }
 
-.disabled input:checked+.indicator-status::before,
-.disabled input:checked+.indicator-status::after,
-.shop-groups .disabled input:checked+.indicator-status::before {
+.disabled input[type="checkbox"]:checked+.indicator-status::before,
+.disabled input[type="checkbox"]:checked+.indicator-status::after,
+.shop-groups .disabled input[type="radio"]:checked+.indicator-status::before {
     background: #b1afad;
 }
 
@@ -713,7 +713,7 @@ img {
     border-radius: 50%;
 }
 
-.shop-groups input:checked+.indicator-status::before {
+.shop-groups input[type="radio"]:checked+.indicator-status::before {
     content: "";
     position: absolute;
     top: 2px;
