@@ -86,7 +86,7 @@ img {
 
 .big-heading h2 {
     position: relative;
-    z-index: 2;
+    z-index: 1;
     display: inline-block;
     margin: 0;
     padding: 0 25px;
@@ -99,7 +99,7 @@ img {
     content: "";
     position: relative;
     top: 25px;
-    z-index: 1;
+    z-index: 0;
     display: block;
     border-bottom: 2px solid black;
 }
@@ -1108,7 +1108,7 @@ img {
     position: absolute;
     top: 10px;
     left: 2px;
-    width: 19px;
+    width: 20px;
     height: 3px;
     background: #d1d1d1;
     border-radius: 1px;
@@ -1253,7 +1253,9 @@ img {
     background: rgba(0, 0, 0, 0.5);
     z-index: 1;
 }
-
+.modal-content-overlay-show {
+    display: block;
+}
 
 /*Анимации*/
 

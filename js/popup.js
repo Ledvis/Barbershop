@@ -1,5 +1,6 @@
 var link = document.querySelector(".login");
 var popup = document.querySelector(".modal-content");
+var overlay = document.querySelector(".modal-content-overlay");
 var close = popup.querySelector(".modal-content-close");
 var form = popup.querySelector("form");
 var login = popup.querySelector("[name=login]");
@@ -9,6 +10,7 @@ var storage = localStorage.getItem("login");
 link.addEventListener("click", function (event) {
     event.preventDefault();
     popup.classList.add("modal-content-show");
+    overlay.classList.add("modal-content-overlay-show");
     if (storage) {
         storage = login.value;
         password.focus();
@@ -21,6 +23,7 @@ close.addEventListener("click", function (event) {
     event.preventDefault();
     popup.classList.remove("modal-content-show");
     popup.classList.remove("modal-content-error");
+    overlay.classList.remove("modal-content-overlay-show");
 });
 
 form.addEventListener("submit", function (event) {
@@ -37,6 +40,7 @@ window.addEventListener("keydown", function (event) {
         if (popup.classList.contains("modal-content-show")) {
             popup.classList.remove("modal-content-show");
             popup.classList.remove("modal-content-error");
+            overlay.classList.remove("modal-content-overlay-show");
         }
     }
 });
@@ -48,17 +52,22 @@ var closeMap = popupMap.querySelector(".modal-content-close");
 linkMap.addEventListener("click", function (event) {
     event.preventDefault();
     popupMap.classList.add("modal-map-show");
+    overlay.classList.add("modal-content-overlay-show");
 });
 
 closeMap.addEventListener("click", function (event) {
     event.preventDefault();
     popupMap.classList.remove("modal-map-show");
+    overlay.classList.remove("modal-content-overlay-show");
 });
 
 window.addEventListener("keydown", function (event) {
     if (event.keyCode === 27) {
         if (popupMap.classList.contains("modal-map-show")) {
             popupMap.classList.remove("modal-map-show");
+            overlay.classList.remove("modal-content-overlay-show");
         }
     }
 });
+
+var gallery
