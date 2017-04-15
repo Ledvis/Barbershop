@@ -264,7 +264,7 @@ img {
     width: 18px;
     height: 16px;
     background-image: url("../img/sprite.png");
-    background-position: -20px -155px;
+    background-position: -19px -154px;
     opacity: 0.3;
 }
 
@@ -506,35 +506,34 @@ img {
     vertical-align: top;
     background: #000000 url("../img/sprite.png") no-repeat center;
     -webkit-transition: all 0.3s;
-    -webkit-transition: all 0.5s;
     transition: all 0.5s;
 }
 
 .footer-social .vk {
-    background-position: -11px -22px;
+    background-position: -12px -22px;
 }
 
 .footer-social .vk:hover {
     background-color: #ffffff;
-    background-position: -11px 14px;
+    background-position: -12px 14px;
 }
 
 .footer-social .fb {
-    background-position: -5px -222px;
+    background-position: -5px -293px;
 }
 
 .footer-social .fb:hover {
     background-color: #ffffff;
-    background-position: -5px -180px;
+    background-position: -5px -251px;
 }
 
 .footer-social .inst {
-    background-position: -8px -103px;
+    background-position: -9px -103px;
 }
 
 .footer-social .inst:hover {
     background-color: #ffffff;
-    background-position: -8px -62px;
+    background-position: -9px -62px;
 }
 
 .footer-social .btn-social:not(:last-child) {
@@ -1164,11 +1163,11 @@ img {
 }
 
 .icon-user {
-    background: url(../img/icon-user.png) no-repeat 275px;
+    background: url(../img/sprite.png) no-repeat 255px -212px;
 }
 
 .icon-password {
-    background: url(../img/icon-password.png) no-repeat 275px;
+    background: url(../img/sprite.png) no-repeat 255px -178px;
 }
 
 .login-checkbox input[type="checkbox"] {
