@@ -479,9 +479,12 @@ img {
 .footer-contact {
 	float: left;
 	width: 310px;
-	margin-right: 85px;
+	margin-right: 100px;
 }
-
+.footer-contact p {
+	margin: 0;
+	padding: 0;
+}
 .footer-contact a {
 	color: #ffffff;
 }
