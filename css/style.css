@@ -481,10 +481,12 @@ img {
 	width: 310px;
 	margin-right: 100px;
 }
+
 .footer-contact p {
 	margin: 0;
 	padding: 0;
 }
+
 .footer-contact a {
 	color: #ffffff;
 }
@@ -1065,7 +1067,7 @@ img {
 }
 
 
-/*Стили для формы*/
+/*Стили для формы popup*/
 
 .modal-content {
 	position: fixed;
@@ -1084,7 +1086,6 @@ img {
 
 .modal-content-show {
 	display: block;
-	-webkit-transition: bounce 0.6s;
 	-webkit-animation: bounce 0.6s;
 	animation: bounce 0.6s;
 }
@@ -1247,6 +1248,9 @@ img {
 .modal-map-show {
 	display: block;
 }
+
+
+/*Стили для overlay*/
 
 .modal-content-overlay {
 	position: fixed;
