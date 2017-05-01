@@ -31,7 +31,7 @@ form.addEventListener("submit", function (event) {
 		event.preventDefault();
 		popup.classList.add("modal-content-error");
 	} else {
-		localStorage.setItem("login", "login.value");
+		localStorage.setItem("login", login.value);
 	}
 });
 
