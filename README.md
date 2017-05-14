@@ -1,0 +1,1 @@
+# Barbershop - we hate you!
