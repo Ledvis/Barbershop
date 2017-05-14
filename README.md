@@ -1,1 +1,1 @@
-# Barbershop - we hate you!
+# Barbershop - we love you!
